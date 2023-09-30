@@ -8,6 +8,9 @@ public class CameraController : MonoBehaviour
     private FPSInputAction m_InputActions;
     private InputAction m_RotateCamera;
 
+    [SerializeField] private GameObject m_Body;
+    [SerializeField] private GameObject m_Head;
+
     [SerializeField] private float m_CameraRotationSpeed = 1f;
 
     [SerializeField] private float m_MaxUpAngle = 85f;
@@ -43,9 +46,8 @@ public class CameraController : MonoBehaviour
         {
             float dt = Time.deltaTime;
 
-            Vector3 currentRotation = this.transform.eulerAngles;
-
             // Vertical movement
+            Vector3 currentRotation = m_Head.transform.eulerAngles;
             float newVerticalAngle = currentRotation.x + -1 * (mouseDelta.y * dt * m_CameraRotationSpeed);
 
             if(newVerticalAngle > -m_MaxDownAngle && newVerticalAngle< 180)
@@ -57,9 +59,13 @@ public class CameraController : MonoBehaviour
             {
                 newVerticalAngle  = (360f - m_MaxUpAngle);
             }
+            m_Head.transform.eulerAngles = new Vector3(newVerticalAngle, currentRotation.y, currentRotation.z);
+
 
             // Horizontal movement
-            float newHorizontalAngle = currentRotation.y + (mouseDelta.x * dt * m_CameraRotationSpeed);
+
+            Vector3 bodyRotation = m_Body.transform.eulerAngles;
+            float newHorizontalAngle = bodyRotation.y + (mouseDelta.x * dt * m_CameraRotationSpeed);
             if(newHorizontalAngle > 360f)
             {
                 newHorizontalAngle -= 360f;
@@ -70,14 +76,26 @@ public class CameraController : MonoBehaviour
                 newHorizontalAngle += 360f;
             }
 
-            // Set new angles
-            this.transform.eulerAngles = new Vector3(newVerticalAngle, newHorizontalAngle, currentRotation.z);
+            m_Body.transform.eulerAngles = new Vector3(bodyRotation.x, newHorizontalAngle, bodyRotation.z);
         }
     }
 
     public void SetCameraMovementActive(bool value)
     {
         m_CanMoveCamera = value;
+        SetCursorFree(value);
+    }
+
+    public void SetCursorFree(bool value)
+    {
+        if(value)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     private void Disable()
