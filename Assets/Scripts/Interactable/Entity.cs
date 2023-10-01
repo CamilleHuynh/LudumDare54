@@ -29,27 +29,34 @@ public class Entity : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        // If using bubbles : set the entity's bubble as Dialogue View to Dialogue Runner
-        DialogueViewBase[] dialogueViewList = { m_DialogueView};
-        m_DialogueRunner.SetDialogueViews(dialogueViewList);
+        if(!m_DialogueManager.IsDialogueRunning)
+        {
+            // If using bubbles : set the entity's bubble as Dialogue View to Dialogue Runner
+            DialogueViewBase[] dialogueViewList = { m_DialogueView};
+            m_DialogueRunner.SetDialogueViews(dialogueViewList);
 
-        m_DialogueContainer.Show(true);
+            m_DialogueContainer.Show(true);
 
-        m_DialogueManager.OnDialogueComplete += DialogueManager_OnDialogueComplete;
+            m_DialogueManager.IsDialogueRunning = true;
+            m_DialogueManager.OnDialogueComplete += DialogueManager_OnDialogueComplete;
 
-        // Hide prompt
-        ShowPrompt(false);
-        m_CanShowPrompt = false;
+            // Hide prompt
+            ShowPrompt(false);
+            m_CanShowPrompt = false;
 
-        // Move Camera ?
+            // Move Camera ?
 
-        // Start dialogue
-        m_DialogueRunner.StartDialogue(m_StartNode);
+            // Start dialogue
+            m_DialogueRunner.StartDialogue(m_StartNode);
+        }
     }
 
     public void ShowPrompt(bool value)
     {
-        m_PromptContainer.Show(m_CanShowPrompt && value);
+        if(!m_DialogueManager.IsDialogueRunning)
+        {
+            m_PromptContainer.Show(m_CanShowPrompt && value);
+        }
     }
 
     private void DialogueManager_OnDialogueComplete()
