@@ -20,6 +20,7 @@ public class Entity : MonoBehaviour, IInteractable
     [SerializeField] private string m_StartNode;
 
     private bool m_CanShowPrompt = true;
+    private bool m_HasAlreadyTalked = false;
 
     private void Start()
     {
@@ -29,7 +30,7 @@ public class Entity : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if(!m_DialogueManager.IsDialogueRunning)
+        if(!m_DialogueManager.IsDialogueRunning && !m_HasAlreadyTalked)
         {
             // If using bubbles : set the entity's bubble as Dialogue View to Dialogue Runner
             DialogueViewBase[] dialogueViewList = { m_DialogueView};
@@ -48,12 +49,14 @@ public class Entity : MonoBehaviour, IInteractable
 
             // Start dialogue
             m_DialogueRunner.StartDialogue(m_StartNode);
+
+            m_HasAlreadyTalked = true;
         }
     }
 
     public void ShowPrompt(bool value)
     {
-        if(!m_DialogueManager.IsDialogueRunning)
+        if(!m_DialogueManager.IsDialogueRunning && !m_HasAlreadyTalked)
         {
             m_PromptContainer.Show(m_CanShowPrompt && value);
         }

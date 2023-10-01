@@ -26,6 +26,8 @@ public class SlidingDoor : MonoBehaviour, IInteractable
     [SerializeField] private AnimationCurve m_HorizontalCurve; // X
     [SerializeField] private AnimationCurve m_OffsetCurve; // Z
 
+    [SerializeField] private PassThroughCollider m_PassThroughCollider;
+
     private void Start()
     {
         m_PromptText.text = IsOpen ? m_TextWhenOpen : m_TextWhenClosed;
@@ -61,6 +63,8 @@ public class SlidingDoor : MonoBehaviour, IInteractable
             m_PromptText.text = m_TextWhenOpen;
 
             StartCoroutine(SlideDoorOpenCo());
+
+            m_PassThroughCollider.OnColliderExit += PassthroughCollider_OnColliderExit;
         }
     }
 
@@ -69,6 +73,17 @@ public class SlidingDoor : MonoBehaviour, IInteractable
         if(m_CanShowPrompt)
         {
             m_PromptContainer.Show(value);
+        }
+    }
+
+    private void PassthroughCollider_OnColliderExit()
+    {
+        if(IsOpen)
+        {
+            ShowPrompt(false);
+            m_PromptText.text = m_TextWhenClosed;
+
+            StartCoroutine(SlideDoorCloseCo());
         }
     }
 

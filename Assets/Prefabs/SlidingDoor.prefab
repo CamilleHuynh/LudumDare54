@@ -434,8 +434,6 @@ GameObject:
   - component: {fileID: 5738098853131303405}
   - component: {fileID: 6739869743595183986}
   - component: {fileID: 5336802139304350011}
-  - component: {fileID: 4488540793752537062}
-  - component: {fileID: 6352704154623548146}
   m_Layer: 7
   m_Name: Door (3)
   m_TagString: Untagged
@@ -508,13 +506,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4488540793752537062
+--- !u!1 &4761737947412800604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2651607443236632415}
+  - component: {fileID: 7388378369722209542}
+  - component: {fileID: 8026538648103033970}
+  m_Layer: 0
+  m_Name: PassThroughCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2651607443236632415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761737947412800604}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: -0}
+  m_LocalScale: {x: 2, y: 3, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2595835239360743349}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7388378369722209542
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3978676223144840636}
+  m_GameObject: {fileID: 4761737947412800604}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -523,108 +554,24 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6352704154623548146
+  m_Size: {x: 1.377317, y: 0.98966664, z: 4.1623497}
+  m_Center: {x: -0.048892766, y: -0.005167683, z: -0.047159195}
+--- !u!114 &8026538648103033970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3978676223144840636}
+  m_GameObject: {fileID: 4761737947412800604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000c01f9135775441a34ca067eac89e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 382f3be0f695b6845a5c8166dd6e73ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SlidingDoor: {fileID: 3978676223144840636}
-  m_PromptText: {fileID: 0}
-  m_PromptContainer: {fileID: 0}
-  m_TextWhenOpen: Close
-  m_TextWhenClosed: Open
-  IsOpen: 0
-  m_AnimationDuration: 1.2
-  m_ClosedTransform: {fileID: 1779081607758260884}
-  m_OpenTransform: {fileID: 7261823634190282776}
-  m_HorizontalCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.088279314
-      outSlope: 0.088279314
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.22104815
-      value: 0.01951398
-      inSlope: 0.5368747
-      outSlope: 0.5368747
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.08022439
-    - serializedVersion: 3
-      time: 0.8868729
-      value: 0.9842329
-      inSlope: 0.5097391
-      outSlope: 0.5097391
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.47688934
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.13937506
-      outSlope: 0.13937506
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_OffsetCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 3.9387386
-      outSlope: 3.9387386
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.21349844
-      value: 0.84091455
-      inSlope: 0.44764173
-      outSlope: 0.44764173
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.048556592
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.20226973
-      outSlope: 0.20226973
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &5298865887478136707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +956,7 @@ Transform:
   - {fileID: 2451691789810522714}
   - {fileID: 6538386769377870464}
   - {fileID: 7736562753709469948}
+  - {fileID: 2651607443236632415}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7261823634190282776
@@ -1053,8 +1001,6 @@ GameObject:
   - component: {fileID: 940699302973593377}
   - component: {fileID: 3279616640346876427}
   - component: {fileID: 3670130918674247171}
-  - component: {fileID: 2827206202115093073}
-  - component: {fileID: 186773928964622849}
   m_Layer: 7
   m_Name: Door (4)
   m_TagString: Untagged
@@ -1127,123 +1073,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2827206202115093073
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8150906627258593948}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &186773928964622849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8150906627258593948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000c01f9135775441a34ca067eac89e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SlidingDoor: {fileID: 8150906627258593948}
-  m_PromptText: {fileID: 0}
-  m_PromptContainer: {fileID: 0}
-  m_TextWhenOpen: Close
-  m_TextWhenClosed: Open
-  IsOpen: 0
-  m_AnimationDuration: 1.2
-  m_ClosedTransform: {fileID: 1779081607758260884}
-  m_OpenTransform: {fileID: 7261823634190282776}
-  m_HorizontalCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.088279314
-      outSlope: 0.088279314
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.22104815
-      value: 0.01951398
-      inSlope: 0.5368747
-      outSlope: 0.5368747
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.08022439
-    - serializedVersion: 3
-      time: 0.8868729
-      value: 0.9842329
-      inSlope: 0.5097391
-      outSlope: 0.5097391
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.47688934
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.13937506
-      outSlope: 0.13937506
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_OffsetCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 3.9387386
-      outSlope: 3.9387386
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.21349844
-      value: 0.84091455
-      inSlope: 0.44764173
-      outSlope: 0.44764173
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.048556592
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.20226973
-      outSlope: 0.20226973
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &8488393141595566488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,8 +1084,6 @@ GameObject:
   - component: {fileID: 532176236140349384}
   - component: {fileID: 790337873982017132}
   - component: {fileID: 8473374194134598418}
-  - component: {fileID: 4528902972927869915}
-  - component: {fileID: 8434631077084257190}
   m_Layer: 7
   m_Name: Door (1)
   m_TagString: Untagged
@@ -1329,123 +1156,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4528902972927869915
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8488393141595566488}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8434631077084257190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8488393141595566488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000c01f9135775441a34ca067eac89e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SlidingDoor: {fileID: 8488393141595566488}
-  m_PromptText: {fileID: 0}
-  m_PromptContainer: {fileID: 0}
-  m_TextWhenOpen: Close
-  m_TextWhenClosed: Open
-  IsOpen: 0
-  m_AnimationDuration: 1.2
-  m_ClosedTransform: {fileID: 1779081607758260884}
-  m_OpenTransform: {fileID: 7261823634190282776}
-  m_HorizontalCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.088279314
-      outSlope: 0.088279314
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.22104815
-      value: 0.01951398
-      inSlope: 0.5368747
-      outSlope: 0.5368747
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.08022439
-    - serializedVersion: 3
-      time: 0.8868729
-      value: 0.9842329
-      inSlope: 0.5097391
-      outSlope: 0.5097391
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.47688934
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.13937506
-      outSlope: 0.13937506
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_OffsetCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 3.9387386
-      outSlope: 3.9387386
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.21349844
-      value: 0.84091455
-      inSlope: 0.44764173
-      outSlope: 0.44764173
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.048556592
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.20226973
-      outSlope: 0.20226973
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &8903746808321936205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,8 +1167,6 @@ GameObject:
   - component: {fileID: 9160243328962365497}
   - component: {fileID: 3903973803705471126}
   - component: {fileID: 328992644931924474}
-  - component: {fileID: 2130154246435907591}
-  - component: {fileID: 5008110246031975703}
   m_Layer: 7
   m_Name: Door (2)
   m_TagString: Untagged
@@ -1531,123 +1239,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2130154246435907591
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8903746808321936205}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5008110246031975703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8903746808321936205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000c01f9135775441a34ca067eac89e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SlidingDoor: {fileID: 8903746808321936205}
-  m_PromptText: {fileID: 0}
-  m_PromptContainer: {fileID: 0}
-  m_TextWhenOpen: Close
-  m_TextWhenClosed: Open
-  IsOpen: 0
-  m_AnimationDuration: 1.2
-  m_ClosedTransform: {fileID: 1779081607758260884}
-  m_OpenTransform: {fileID: 7261823634190282776}
-  m_HorizontalCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.088279314
-      outSlope: 0.088279314
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.22104815
-      value: 0.01951398
-      inSlope: 0.5368747
-      outSlope: 0.5368747
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.08022439
-    - serializedVersion: 3
-      time: 0.8868729
-      value: 0.9842329
-      inSlope: 0.5097391
-      outSlope: 0.5097391
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.47688934
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.13937506
-      outSlope: 0.13937506
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_OffsetCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 3.9387386
-      outSlope: 3.9387386
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.21349844
-      value: 0.84091455
-      inSlope: 0.44764173
-      outSlope: 0.44764173
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.048556592
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.20226973
-      outSlope: 0.20226973
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &9082376271789760477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,8 +1304,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.6136742}
+  m_Center: {x: -0, y: 0, z: -0.0029802322}
 --- !u!114 &8032646000064487643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +1402,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  m_PassThroughCollider: {fileID: 8026538648103033970}
 --- !u!1001 &4626475098571407609
 PrefabInstance:
   m_ObjectHideFlags: 0
