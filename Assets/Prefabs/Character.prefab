@@ -290,6 +290,7 @@ GameObject:
   - component: {fileID: 8815219177744079592}
   - component: {fileID: 6599799510191816076}
   - component: {fileID: 7153263509561510535}
+  - component: {fileID: 649759557055655955}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -341,6 +342,7 @@ MonoBehaviour:
   m_ObstacleLayer:
     serializedVersion: 2
     m_Bits: 64
+  CurrentInput: {x: 0, y: 0}
 --- !u!114 &7887351935849399855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +377,9 @@ MonoBehaviour:
   m_InteractableLayer:
     serializedVersion: 2
     m_Bits: 128
+  m_ObstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!136 &8815219177744079592
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -440,6 +445,21 @@ MonoBehaviour:
   Character: {fileID: 6399879873392983726}
   Body: {fileID: 2656706498618075349}
   Camera: {fileID: 7831782524713915765}
+--- !u!114 &649759557055655955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6399879873392983726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28fc7b6335a0f34995643c7bbed4378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 7831782524713915765}
+  m_BobbingSpeed: 12
+  m_BobbingAmplitude: 0.03
 --- !u!1 &7831782524713915765
 GameObject:
   m_ObjectHideFlags: 0

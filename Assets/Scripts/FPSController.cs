@@ -37,6 +37,8 @@ public class FPSController : MonoBehaviour
     private Vector3 m_CurrentAcceleration = Vector3.zero;
     private List<bool> m_HasAcceleratedThisFrame = new List<bool>(3);
 
+    public Vector2 CurrentInput;
+
     private void OnEnable()
     {
         m_InputActions = new FPSInputAction();
@@ -57,11 +59,11 @@ public class FPSController : MonoBehaviour
         if(m_CanMove)
         {
             // Fetch input
-            Vector2 currentInput = m_MoveAction.ReadValue<Vector2>();
+            CurrentInput = m_MoveAction.ReadValue<Vector2>();
 
             // Simple version
-            Vector3 forwardMovement = m_Body.transform.forward * currentInput.y * 0.5f * m_MaxWalkingSpeed * dt;
-            Vector3 sideMovement = m_Body.transform.right * currentInput.x * 0.5f *m_MaxWalkingSpeed * dt;
+            Vector3 forwardMovement = m_Body.transform.forward * CurrentInput.y * 0.5f * m_MaxWalkingSpeed * dt;
+            Vector3 sideMovement = m_Body.transform.right * CurrentInput.x * 0.5f *m_MaxWalkingSpeed * dt;
 
             // Stick to ground
             Vector3 groundNormal = Vector3.zero;
