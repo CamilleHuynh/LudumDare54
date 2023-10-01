@@ -89,9 +89,6 @@ public class SlidingDoor : MonoBehaviour, IInteractable
             localX = Mathf.Lerp(m_ClosedTransform.transform.localPosition.x, m_OpenTransform.transform.localPosition.x, m_HorizontalCurve.Evaluate(animationRate));
             localZ = Mathf.Lerp(m_ClosedTransform.transform.localPosition.z, m_OpenTransform.transform.localPosition.z, m_HorizontalCurve.Evaluate(animationRate));
 
-            Debug.Log("local pos: " + m_SlidingDoor.transform.localPosition);
-            Debug.Log("local displacement: " + localX + ", " + localZ);
-
             m_SlidingDoor.transform.localPosition = new Vector3(localX, m_SlidingDoor.transform.localPosition.y, localZ);
         }
 
@@ -115,12 +112,10 @@ public class SlidingDoor : MonoBehaviour, IInteractable
             elapsedTime += Time.deltaTime;
             animationRate = elapsedTime / m_AnimationDuration;
 
-            localX = Mathf.Lerp(m_OpenTransform.transform.localPosition.x, m_ClosedTransform.transform.localPosition.x, m_HorizontalCurve.Evaluate(animationRate));
-            localZ = Mathf.Lerp(m_OpenTransform.transform.localPosition.z, m_ClosedTransform.transform.localPosition.z, m_HorizontalCurve.Evaluate(animationRate));
+            localX = Mathf.Lerp(m_ClosedTransform.transform.localPosition.x, m_OpenTransform.transform.localPosition.x, m_HorizontalCurve.Evaluate(1 - animationRate));
+            localZ = Mathf.Lerp(m_ClosedTransform.transform.localPosition.z, m_OpenTransform.transform.localPosition.z, m_HorizontalCurve.Evaluate(1 - animationRate));
 
-            Debug.Log("local pos: " + m_SlidingDoor.transform.localPosition);
-
-            m_SlidingDoor.transform.position = new Vector3(localX, m_SlidingDoor.transform.localPosition.y, localZ);
+            m_SlidingDoor.transform.localPosition = new Vector3(localX, m_SlidingDoor.transform.localPosition.y, localZ);
         }
 
         m_CanShowPrompt = true;
