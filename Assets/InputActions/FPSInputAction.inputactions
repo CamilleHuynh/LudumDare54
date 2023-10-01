@@ -24,7 +24,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Action",
+                    "name": "Interact",
                     "type": "Button",
                     "id": "efd3ce4f-9093-4727-b0f9-bb77ce2517d7",
                     "expectedControlType": "Button",
@@ -257,11 +257,11 @@
                 {
                     "name": "",
                     "id": "5c7eca65-3051-45e8-b952-b147e9f63f2c",
-                    "path": "<Keyboard>/e",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Action",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -272,7 +272,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Action",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

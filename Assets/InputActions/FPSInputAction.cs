@@ -46,7 +46,7 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Action"",
+                    ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""efd3ce4f-9093-4727-b0f9-bb77ce2517d7"",
                     ""expectedControlType"": ""Button"",
@@ -279,11 +279,11 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""5c7eca65-3051-45e8-b952-b147e9f63f2c"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Action"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -294,7 +294,7 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Action"",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -335,7 +335,7 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
         m_Base = asset.FindActionMap("Base", throwIfNotFound: true);
         m_Base_Camera = m_Base.FindAction("Camera", throwIfNotFound: true);
         m_Base_Movement = m_Base.FindAction("Movement", throwIfNotFound: true);
-        m_Base_Action = m_Base.FindAction("Action", throwIfNotFound: true);
+        m_Base_Interact = m_Base.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -399,14 +399,14 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
     private List<IBaseActions> m_BaseActionsCallbackInterfaces = new List<IBaseActions>();
     private readonly InputAction m_Base_Camera;
     private readonly InputAction m_Base_Movement;
-    private readonly InputAction m_Base_Action;
+    private readonly InputAction m_Base_Interact;
     public struct BaseActions
     {
         private @FPSInputAction m_Wrapper;
         public BaseActions(@FPSInputAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @Camera => m_Wrapper.m_Base_Camera;
         public InputAction @Movement => m_Wrapper.m_Base_Movement;
-        public InputAction @Action => m_Wrapper.m_Base_Action;
+        public InputAction @Interact => m_Wrapper.m_Base_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Base; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -422,9 +422,9 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
-            @Action.started += instance.OnAction;
-            @Action.performed += instance.OnAction;
-            @Action.canceled += instance.OnAction;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
         }
 
         private void UnregisterCallbacks(IBaseActions instance)
@@ -435,9 +435,9 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
-            @Action.started -= instance.OnAction;
-            @Action.performed -= instance.OnAction;
-            @Action.canceled -= instance.OnAction;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
         }
 
         public void RemoveCallbacks(IBaseActions instance)
@@ -477,6 +477,6 @@ public partial class @FPSInputAction: IInputActionCollection2, IDisposable
     {
         void OnCamera(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
-        void OnAction(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
