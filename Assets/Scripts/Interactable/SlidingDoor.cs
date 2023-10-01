@@ -28,9 +28,13 @@ public class SlidingDoor : MonoBehaviour, IInteractable
 
     [SerializeField] private PassThroughCollider m_PassThroughCollider;
 
+    private AudioSource m_AudioSource;
+
     private void Start()
     {
         m_PromptText.text = IsOpen ? m_TextWhenOpen : m_TextWhenClosed;
+
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     public void Interact()
@@ -66,6 +70,8 @@ public class SlidingDoor : MonoBehaviour, IInteractable
 
             m_PassThroughCollider.OnColliderExit += PassthroughCollider_OnColliderExit;
         }
+
+        m_AudioSource.Play();
     }
 
     public void ShowPrompt(bool value)

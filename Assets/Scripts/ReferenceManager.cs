@@ -8,6 +8,7 @@ public class ReferenceManager : MonoBehaviour
     public GameObject Body;
     public GameObject Camera;
 
+    public GameObject StartLevel;
     [HideInInspector] public Vector3 StartWagonPosition;
     public WagonPair StartWagonPair;
     [HideInInspector] public Vector3 StartSasPosition;

@@ -372,12 +372,7 @@ public class BubbleView : DialogueViewBase
                     canvasGroup.interactable = true;
                     canvasGroup.blocksRaycasts = true;
                     yield return StartCoroutine(
-                        Effects.Typewriter(
-                            lineText,
-                            typewriterEffectSpeed,
-                            () => onCharacterTyped.Invoke(),
-                            currentStopToken
-                        )
+                        Typewriter(lineText, () => onCharacterTyped.Invoke())
                     );
                     if (currentStopToken.WasInterrupted) {
                         // The typewriter effect was interrupted. Stop this
@@ -484,4 +479,32 @@ public class BubbleView : DialogueViewBase
                 StartCoroutine(DismissLineInternal(null));
             }
         }
+
+        public IEnumerator Typewriter(TextMeshProUGUI text, Action onCharacterTyped)
+        {
+            text.maxVisibleCharacters = 0;
+            yield return null;
+            int characterCount = text.textInfo.characterCount;
+
+            float secondsPerLetter;
+            secondsPerLetter = 1f / typewriterEffectSpeed;
+
+            float accumulator = Time.deltaTime;
+            while (text.maxVisibleCharacters < characterCount)
+            {
+                while (accumulator >= secondsPerLetter)
+                {
+                    text.maxVisibleCharacters++;
+                    onCharacterTyped?.Invoke();
+                    accumulator -= secondsPerLetter;
+                }
+
+                accumulator += Time.deltaTime;
+                yield return null;
+            }
+
+            text.maxVisibleCharacters = characterCount;
+        }
+
+
 }
