@@ -9,12 +9,14 @@ public class CameraBobbing : MonoBehaviour
 
     [SerializeField] private float m_BobbingSpeed = 1f;
     [SerializeField] private float m_BobbingAmplitude = 0.1f;
+    [SerializeField] private float m_StopLerpSpeed = 4f;
 
     private FPSController m_FPSController;
 
     private Vector2 m_CurrentInput;
     private bool m_IsWalking = false;
     private float m_Timer = 0f;
+    private float m_TimeSinceWalking = 0f;
     private Vector3 m_Offset = Vector3.zero;
 
     private void Start()
@@ -28,11 +30,18 @@ public class CameraBobbing : MonoBehaviour
     {
         m_CurrentInput = m_FPSController.CurrentInput;
 
-        Debug.Log("current input: " + m_CurrentInput);
-
         if(Mathf.Abs(m_CurrentInput.x) > 0.1f || Mathf.Abs(m_CurrentInput.y) > 0.1f)
         {
-            Debug.Log("Bobbing");
+            if(!m_IsWalking)
+            {
+                // Started walking this frame
+
+                // Start walkign SFX
+
+                m_Timer = 0f;
+            }
+            m_IsWalking = true;
+
             m_Timer += Time.deltaTime * m_BobbingSpeed;
 
             m_Offset.y = m_BobbingAmplitude * Mathf.Cos(m_Timer);
@@ -41,7 +50,20 @@ public class CameraBobbing : MonoBehaviour
         }
         else
         {
-            // m_Camera.transform.localPosition = m_InitialLocalPosition;
+            if(m_IsWalking)
+            {
+                // Stopped this frame
+
+                // Stop walking SFX
+
+                m_TimeSinceWalking = 0f;
+            }
+            else
+            {
+                m_TimeSinceWalking += Time.deltaTime;
+                m_Offset.y = Mathf.Lerp(m_BobbingAmplitude * Mathf.Cos(m_Timer), 0, m_TimeSinceWalking * m_StopLerpSpeed);
+            }
+            m_IsWalking = false;
         }
     }
 }
