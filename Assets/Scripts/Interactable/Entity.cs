@@ -7,6 +7,7 @@ using Yarn.Unity;
 public class Entity : MonoBehaviour, IInteractable
 {
     private DialogueRunner m_DialogueRunner;
+    private DialogueManager m_DialogueManager;
 
     [Header("Prompt")]
     [SerializeField] private TextMeshProUGUI m_Text;
@@ -18,20 +19,29 @@ public class Entity : MonoBehaviour, IInteractable
     [SerializeField] private DialogueViewBase m_DialogueView;
     [SerializeField] private string m_StartNode;
 
+    private bool m_CanShowPrompt = true;
+
     private void Start()
     {
         m_DialogueRunner = FindObjectOfType<DialogueRunner>();
+        m_DialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     public void Interact()
     {
+        Debug.Log("Interact");
+
         // If using bubbles : set the entity's bubble as Dialogue View to Dialogue Runner
         DialogueViewBase[] dialogueViewList = { m_DialogueView};
         m_DialogueRunner.SetDialogueViews(dialogueViewList);
 
         m_DialogueContainer.Show(true);
 
+        m_DialogueManager.OnDialogueComplete += DialogueManager_OnDialogueComplete;
+
         // Hide prompt
+        ShowPrompt(false);
+        m_CanShowPrompt = false;
 
         // Move Camera ?
 
@@ -41,7 +51,16 @@ public class Entity : MonoBehaviour, IInteractable
 
     public void ShowPrompt(bool value)
     {
-        Debug.Log("Show prompt " + value);
-        m_PromptContainer.Show(value);
+        m_PromptContainer.Show(m_CanShowPrompt && value);
+    }
+
+    private void DialogueManager_OnDialogueComplete()
+    {
+        m_DialogueManager.OnDialogueComplete -= DialogueManager_OnDialogueComplete;
+
+        // Hide dialogue view
+        m_DialogueContainer.Show(false);
+
+        m_CanShowPrompt = true;
     }
 }

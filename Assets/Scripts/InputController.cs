@@ -11,6 +11,7 @@ public class InputController : MonoBehaviour
     [SerializeField] private Camera m_Camera;
     [SerializeField] private float m_MaxDistanceToInteract = 3f;
     [SerializeField] private LayerMask m_InteractableLayer;
+    [SerializeField] private LayerMask m_ObstacleLayer;
     private FPSInputAction m_InputActions;
     private InputAction m_InteractAction;
 
@@ -54,25 +55,31 @@ public class InputController : MonoBehaviour
 
                 GameObject target = closestHit.collider.gameObject;
 
-                if(target.TryGetComponent<IInteractable>(out IInteractable interactable))
+                if(!Physics.Raycast(m_Camera.transform.position, m_Camera.transform.forward, hitDistance, m_ObstacleLayer))
                 {
-                    Debug.Log("Found interactible");
-
-                    if(m_LastInteractable == null || interactable != m_LastInteractable)
+                    if(target.TryGetComponent<IInteractable>(out IInteractable interactable))
                     {
-                        Debug.Log("changed interactable");
-
-                        if(m_LastInteractable != null)
+                        if(m_LastInteractable == null || interactable != m_LastInteractable)
                         {
-                            Debug.Log("hide old prompt");
-                            // Hide prompt of last interactable
-                            m_LastInteractable.ShowPrompt(false);
+                            if(m_LastInteractable != null)
+                            {
+                                // Hide prompt of last interactable
+                                m_LastInteractable.ShowPrompt(false);
+                            }
                         }
+
+                        interactable.ShowPrompt(true);
+
+                        m_LastInteractable = interactable;
                     }
-
-                    interactable.ShowPrompt(true);
-
-                    m_LastInteractable = interactable;
+                }
+                else
+                {
+                    if(m_LastInteractable != null)
+                    {
+                        // Hide prompt of last interactable
+                        m_LastInteractable.ShowPrompt(false);
+                    }
                 }
             }
             else
@@ -110,11 +117,16 @@ public class InputController : MonoBehaviour
 
                 GameObject target = closestHit.collider.gameObject;
 
-                if(target.TryGetComponent<IInteractable>(out IInteractable interactable))
+                // if there is no obstacle
+                if(!Physics.Raycast(m_Camera.transform.position, m_Camera.transform.forward, hitDistance, m_ObstacleLayer))
                 {
-                    m_LastInteractable = interactable;
+                    if(target.TryGetComponent<IInteractable>(out IInteractable interactable))
+                    {
+                        m_LastInteractable = interactable;
 
-                    // Start interact
+                        // Start interact
+                        m_LastInteractable.Interact();
+                    }
                 }
             }
         }
