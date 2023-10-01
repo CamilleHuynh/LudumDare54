@@ -135,7 +135,7 @@ public class BubbleView : DialogueViewBase
         /// <seealso cref="useTypewriterEffect"/>
         [SerializeField]
         [Min(0)]
-        internal float typewriterEffectSpeed = 0f;
+        private float typewriterEffectSpeed = 0f;
 
         /// <summary>
         /// The game object that represents an on-screen button that the user
@@ -159,7 +159,7 @@ public class BubbleView : DialogueViewBase
         /// </summary>
         [SerializeField]
         [Min(0)]
-        internal float holdTime = 1f;
+        private float holdTime = 1f;
 
         /// <summary>
         /// Controls whether this Line View will wait for user input before
@@ -183,7 +183,7 @@ public class BubbleView : DialogueViewBase
         /// when to advance to the next line.</para></para>
         /// </remarks>
         [SerializeField]
-        internal bool autoAdvance = false;
+        private bool autoAdvance = true;
 
         /// <summary>
         /// The current <see cref="LocalizedLine"/> that this line view is

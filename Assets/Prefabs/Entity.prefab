@@ -630,7 +630,7 @@ MonoBehaviour:
   m_TextWhenHovering: Talk
   m_PromptContainer: {fileID: 2783455897598559095}
   m_DialogueContainer: {fileID: 8520357434212818905}
-  m_DialogueView: {fileID: 7614864095831424982}
+  m_DialogueView: {fileID: 519038484206500631}
   m_StartNode: Y
 --- !u!136 &6439638243911089289
 CapsuleCollider:
@@ -665,7 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4576994620210691083}
   - component: {fileID: 2874053964455935705}
-  - component: {fileID: 7614864095831424982}
+  - component: {fileID: 519038484206500631}
   - component: {fileID: 8520357434212818905}
   m_Layer: 5
   m_Name: Dialogue bubble
@@ -708,7 +708,7 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &7614864095831424982
+--- !u!114 &519038484206500631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -717,24 +717,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 6530818009046371618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
+  m_Script: {fileID: 11500000, guid: f9ff4731c76d0db4c8d2b5ab9e64f42d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 2874053964455935705}
-  useFadeEffect: 1
+  useFadeEffect: 0
   fadeInTime: 0.25
   fadeOutTime: 0.05
   lineText: {fileID: 7066492623711934226}
   showCharacterNameInLineView: 0
   characterNameText: {fileID: 0}
-  useTypewriterEffect: 0
+  useTypewriterEffect: 1
   onCharacterTyped:
     m_PersistentCalls:
       m_Calls: []
-  typewriterEffectSpeed: 0
+  typewriterEffectSpeed: 20
   continueButton: {fileID: 0}
-  holdTime: 1
-  autoAdvance: 0
+  holdTime: 3
+  autoAdvance: 1
 --- !u!114 &8520357434212818905
 MonoBehaviour:
   m_ObjectHideFlags: 0

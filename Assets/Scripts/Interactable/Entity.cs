@@ -29,8 +29,6 @@ public class Entity : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log("Interact");
-
         // If using bubbles : set the entity's bubble as Dialogue View to Dialogue Runner
         DialogueViewBase[] dialogueViewList = { m_DialogueView};
         m_DialogueRunner.SetDialogueViews(dialogueViewList);
