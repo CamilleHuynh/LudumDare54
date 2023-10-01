@@ -631,7 +631,7 @@ MonoBehaviour:
   m_PromptContainer: {fileID: 2783455897598559095}
   m_DialogueContainer: {fileID: 8520357434212818905}
   m_DialogueView: {fileID: 7614864095831424982}
-  m_StartNode: Yo
+  m_StartNode: Y
 --- !u!136 &6439638243911089289
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -732,7 +732,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   typewriterEffectSpeed: 0
-  continueButton: {fileID: 852312114757134740}
+  continueButton: {fileID: 0}
   holdTime: 1
   autoAdvance: 0
 --- !u!114 &8520357434212818905
