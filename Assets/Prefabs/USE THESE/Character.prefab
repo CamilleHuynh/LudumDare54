@@ -455,7 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Body: {fileID: 2656706498618075349}
   m_Head: {fileID: 7831782524713915765}
-  m_CameraRotationSpeed: 150
+  m_CameraRotationSpeed: 130
   m_MaxUpAngle: 85
   m_MaxDownAngle: -85
 --- !u!114 &5643459556679504040
@@ -545,10 +545,10 @@ MonoBehaviour:
   Camera: {fileID: 7831782524713915765}
   StartLevel: {fileID: 0}
   StartWagonPosition: {x: 0, y: 0, z: 0}
-  StartWagonPair: {fileID: 0}
+  StartWagon: {fileID: 0}
   StartSasPosition: {x: 0, y: 0, z: 0}
   StartSasPair: {fileID: 0}
-  CurrentWagonPair: {fileID: 0}
+  CurrentWagon: {fileID: 0}
   CurrentSasPair: {fileID: 0}
 --- !u!114 &649759557055655955
 MonoBehaviour:
