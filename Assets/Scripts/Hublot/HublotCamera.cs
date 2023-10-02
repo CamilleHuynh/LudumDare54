@@ -19,7 +19,7 @@ public class HublotCamera : MonoBehaviour
         m_Head = m_References.Camera;
 
         m_CameraOffset = m_SubgroupLevel.transform.position - m_References.StartLevel.transform.position;
-        m_CameraInitialRotation = m_Camera.transform.rotation * Quaternion.Inverse(m_Head.transform.rotation);
+        m_CameraInitialRotation = m_Camera.transform.rotation;
     }
 
     private void Update()
