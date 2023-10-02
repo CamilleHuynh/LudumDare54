@@ -10,12 +10,11 @@ public class EntityAudioManager : MonoBehaviour
     [SerializeField] private List<AudioClip> m_Respirations;
 
     [YarnCommand("respiration")]
-    public void Respiration(int index)
+    public void Respiration()
     {
-        if(index >= 0 && index < m_Respirations.Count)
-        {
-            m_AudioSource.clip = m_Respirations[index];
-            m_AudioSource.Play();
-        }
+        int index = Random.Range(0, m_Respirations.Count);
+
+        m_AudioSource.clip = m_Respirations[index];
+        m_AudioSource.Play();
     }
 }

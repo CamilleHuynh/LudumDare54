@@ -7,6 +7,8 @@ using TMPro;
 
 public class BubbleView : DialogueViewBase
 {
+    [SerializeField] private EntityAudioManager m_AudioManager;
+
 /// <summary>
         /// The canvas group that contains the UI elements used by this Line
         /// View.
@@ -303,6 +305,8 @@ public class BubbleView : DialogueViewBase
         {
             IEnumerator PresentLine()
             {
+                m_AudioManager.Respiration();
+
                 lineText.gameObject.SetActive(true);
                 canvasGroup.gameObject.SetActive(true);
 
