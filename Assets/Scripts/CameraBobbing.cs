@@ -18,7 +18,6 @@ public class CameraBobbing : MonoBehaviour
     private float m_Timer = 0f;
     private float m_TimeSinceWalking = 0f;
     private Vector3 m_Offset = Vector3.zero;
-
     private AudioSource m_AudioSource;
 
     private void Start()
@@ -26,7 +25,6 @@ public class CameraBobbing : MonoBehaviour
         m_FPSController = FindObjectOfType<FPSController>();
 
         m_InitialLocalPosition = m_Camera.transform.localPosition;
-
         m_AudioSource = GetComponent<AudioSource>();
     }
 
