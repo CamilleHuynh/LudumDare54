@@ -167,6 +167,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8495281340160340015}
     m_Modifications:
+    - target: {fileID: 3629853727247335680, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
+    - target: {fileID: 3891056763712127571, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
+    - target: {fileID: 4142590928305986137, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
+    - target: {fileID: 4344535762204877758, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
+    - target: {fileID: 4855497807825530053, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
     - target: {fileID: 5314341853575611437, guid: 17b811b19b9438d418936755d5bb83a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -222,6 +247,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sas Husk
       objectReference: {fileID: 0}
+    - target: {fileID: 6042573419984091377, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
+    - target: {fileID: 6202812725076782719, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 940bc7aadf5d63d44bec6c41ba349eb3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
