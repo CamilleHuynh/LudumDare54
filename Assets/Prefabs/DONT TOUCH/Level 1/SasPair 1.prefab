@@ -73,6 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401942338878609244}
+  - component: {fileID: 6146730066637001929}
   m_Layer: 0
   m_Name: SasPair 1
   m_TagString: Untagged
@@ -97,6 +98,21 @@ Transform:
   - {fileID: 90647101073071200}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6146730066637001929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5836509421818058454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b51605e13f1fe4ab4cab1397fc0fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LowZ: {fileID: 2812319799014612819}
+  HighZ: {fileID: 1683255336802962141}
+  IsStartSasPair: 1
 --- !u!1001 &1724410546838005126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105,6 +121,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 90647101073071200}
     m_Modifications:
+    - target: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+        type: 3}
+      propertyPath: m_CoupledSas
+      value: 
+      objectReference: {fileID: 1683255336802962141}
+    - target: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+        type: 3}
+      propertyPath: m_TPCollider
+      value: 
+      objectReference: {fileID: 4851440093708913001}
+    - target: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+        type: 3}
+      propertyPath: m_SwitchWagonCollider
+      value: 
+      objectReference: {fileID: 6741954428480030254}
     - target: {fileID: 3552227248860659691, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
         type: 3}
       propertyPath: m_Name
@@ -165,6 +196,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf4ebfc26d76fe4a8f0054decaa5143, type: 3}
+--- !u!114 &2812319799014612819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+    type: 3}
+  m_PrefabInstance: {fileID: 1724410546838005126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4a114942bec3a4388b77592c4250ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4851440093708913001 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6106196434542718191, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+    type: 3}
+  m_PrefabInstance: {fileID: 1724410546838005126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382f3be0f695b6845a5c8166dd6e73ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6741954428480030254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5367848290884510632, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+    type: 3}
+  m_PrefabInstance: {fileID: 1724410546838005126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382f3be0f695b6845a5c8166dd6e73ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6774081008853016430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5326641843764476648, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
@@ -179,6 +246,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 285860479382335693}
     m_Modifications:
+    - target: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+        type: 3}
+      propertyPath: m_CoupledSas
+      value: 
+      objectReference: {fileID: 2812319799014612819}
+    - target: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+        type: 3}
+      propertyPath: m_TPCollider
+      value: 
+      objectReference: {fileID: 7911551235228373920}
+    - target: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+        type: 3}
+      propertyPath: m_SwitchWagonCollider
+      value: 
+      objectReference: {fileID: 8289021576282643687}
     - target: {fileID: 3552227248860659691, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
         type: 3}
       propertyPath: m_Name
@@ -239,9 +321,45 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf4ebfc26d76fe4a8f0054decaa5143, type: 3}
+--- !u!114 &1683255336802962141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3524361057494055637, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+    type: 3}
+  m_PrefabInstance: {fileID: 2861215656715284488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4a114942bec3a4388b77592c4250ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7911551235228373920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5367848290884510632, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+    type: 3}
+  m_PrefabInstance: {fileID: 2861215656715284488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382f3be0f695b6845a5c8166dd6e73ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7951418442859203296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5326641843764476648, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
     type: 3}
   m_PrefabInstance: {fileID: 2861215656715284488}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8289021576282643687 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6106196434542718191, guid: 1cf4ebfc26d76fe4a8f0054decaa5143,
+    type: 3}
+  m_PrefabInstance: {fileID: 2861215656715284488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382f3be0f695b6845a5c8166dd6e73ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

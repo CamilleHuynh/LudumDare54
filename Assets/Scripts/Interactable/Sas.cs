@@ -16,7 +16,7 @@ public class Sas : MonoBehaviour
 
     [Header("Change wagon")]
     [SerializeField] private PassThroughCollider m_SwitchWagonCollider;
-    [SerializeField] private WagonPair m_NextWagonPair;
+    [SerializeField] private Wagon m_NextWagon;
 
     private void Start()
     {
@@ -37,10 +37,10 @@ public class Sas : MonoBehaviour
     {
         if(!IsStartGame)
         {
-            m_References.CurrentWagonPair.Activate(false);
-            m_NextWagonPair.Activate(true);
+            m_References.CurrentWagon.Activate(false);
+            m_NextWagon.Activate(true);
 
-            m_References.CurrentWagonPair = m_NextWagonPair;
+            m_References.CurrentWagon = m_NextWagon;
         }
     }
 }

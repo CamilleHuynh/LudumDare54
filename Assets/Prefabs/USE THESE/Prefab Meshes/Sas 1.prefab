@@ -145,6 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5326641843764476648}
+  - component: {fileID: 3524361057494055637}
   m_Layer: 0
   m_Name: Sas 1
   m_TagString: Untagged
@@ -170,6 +171,24 @@ Transform:
   - {fileID: 280627957216068800}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3524361057494055637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552227248860659691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4a114942bec3a4388b77592c4250ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsStartSas: 0
+  IsStartGame: 0
+  m_TPCollider: {fileID: 0}
+  m_CoupledSas: {fileID: 0}
+  m_SwitchWagonCollider: {fileID: 0}
+  m_NextWagon: {fileID: 0}
 --- !u!1001 &7262733519610069108
 PrefabInstance:
   m_ObjectHideFlags: 0

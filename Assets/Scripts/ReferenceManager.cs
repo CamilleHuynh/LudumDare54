@@ -10,19 +10,19 @@ public class ReferenceManager : MonoBehaviour
 
     public GameObject StartLevel;
     [HideInInspector] public Vector3 StartWagonPosition;
-    public WagonPair StartWagonPair;
+    public Wagon StartWagon;
     [HideInInspector] public Vector3 StartSasPosition;
     public SasPair StartSasPair;
 
-    [HideInInspector] public WagonPair CurrentWagonPair;
+    [HideInInspector] public Wagon CurrentWagon;
     [HideInInspector] public SasPair CurrentSasPair;
 
     private void Start()
     {
-        StartWagonPosition = StartWagonPair.transform.position;
+        StartWagonPosition = StartWagon.transform.position;
         StartSasPosition = StartSasPair.transform.position;
 
-        CurrentWagonPair = StartWagonPair;
+        CurrentWagon = StartWagon;
         CurrentSasPair = StartSasPair;
 
         // StartWagonPair.Activate(true);

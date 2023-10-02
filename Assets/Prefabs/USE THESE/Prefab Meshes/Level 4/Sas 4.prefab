@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8495281340160340015}
+  - component: {fileID: 188926391813469701}
   m_Layer: 0
   m_Name: Sas 4
   m_TagString: Untagged
@@ -29,10 +30,28 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5557492871661369072}
   - {fileID: 8228788127476617263}
+  - {fileID: 6079951711488227247}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188926391813469701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956256302049244460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4a114942bec3a4388b77592c4250ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsStartSas: 0
+  IsStartGame: 0
+  m_TPCollider: {fileID: 0}
+  m_CoupledSas: {fileID: 0}
+  m_SwitchWagonCollider: {fileID: 0}
+  m_NextWagon: {fileID: 0}
 --- !u!1 &2134599644229742642
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,7 +83,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8495281340160340015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &351416630220796637
+--- !u!1001 &2134712940762575746
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -132,9 +151,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b811b19b9438d418936755d5bb83a7, type: 3}
---- !u!4 &5557492871661369072 stripped
+--- !u!4 &6079951711488227247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5314341853575611437, guid: 17b811b19b9438d418936755d5bb83a7,
     type: 3}
-  m_PrefabInstance: {fileID: 351416630220796637}
+  m_PrefabInstance: {fileID: 2134712940762575746}
   m_PrefabAsset: {fileID: 0}

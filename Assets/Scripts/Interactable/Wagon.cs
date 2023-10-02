@@ -21,6 +21,27 @@ public class Wagon : MonoBehaviour
         m_References = FindObjectOfType<ReferenceManager>();
 
         m_SwitchSasCollider.OnColliderEnter += SwitchSasCollider_OnTriggerEnter;
+
+        if(IsStartWagon)
+        {
+            m_InitialPosition = this.transform.position + new Vector3(0, -500, 0);
+        }
+        else
+        {
+            m_InitialPosition = this.transform.position;
+        }
+    }
+
+    public void Activate(bool value)
+    {
+        if(value)
+        {
+            this.transform.position = m_References.StartWagonPosition;
+        }
+        else
+        {
+            this.transform.position = m_InitialPosition;
+        }
     }
 
     private void SwitchSasCollider_OnTriggerEnter()

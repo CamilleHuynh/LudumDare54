@@ -40,6 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2577000572898862251}
+  - component: {fileID: 6773890285956709596}
   m_Layer: 0
   m_Name: Wagon 5
   m_TagString: Untagged
@@ -65,6 +66,22 @@ Transform:
   - {fileID: 320134233865732797}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6773890285956709596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833927430196406344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412395ea0a3774d4db0275161c115e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsStartWagon: 0
+  IsStartGame: 0
+  m_SwitchSasCollider: {fileID: 5298307896691348233}
+  m_NextSasPair: {fileID: 0}
 --- !u!1001 &876567259548873535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1200,6 +1217,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6731893165496313509}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5298307896691348233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1507337942709237164, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6731893165496313509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382f3be0f695b6845a5c8166dd6e73ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5311925793713511562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1503003220208712239, guid: 77701134cdf34c74d9a28b10b14fcf4b,
