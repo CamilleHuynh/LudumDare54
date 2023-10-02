@@ -23,10 +23,12 @@ public class InputController : MonoBehaviour
         m_InputActions = new FPSInputAction();
 
         // Fetch action
-        m_InteractAction.Enable();
+
         m_InteractAction = m_InputActions.Base.Interact;
+        m_InteractAction.Enable();
         m_InteractAction.performed += OnInteract;
 
+        m_CanInteract = true;
     }
 
     private void Update()
