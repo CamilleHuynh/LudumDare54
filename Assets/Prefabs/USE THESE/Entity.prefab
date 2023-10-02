@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 462925738864658084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.84, z: 0}
+  m_LocalPosition: {x: 0, y: -1.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62,7 +62,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3380599439759942543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -834,6 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ff4731c76d0db4c8d2b5ab9e64f42d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AudioManager: {fileID: 0}
   canvasGroup: {fileID: 2874053964455935705}
   useFadeEffect: 0
   fadeInTime: 0.25
