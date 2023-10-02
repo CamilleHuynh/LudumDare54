@@ -7,6 +7,7 @@ public class ReferenceManager : MonoBehaviour
     public GameObject Character;
     public GameObject Body;
     public GameObject Camera;
+    public AudioSource m_MusicSource;
 
     public GameObject StartLevel;
     [HideInInspector] public Vector3 StartWagonPosition;

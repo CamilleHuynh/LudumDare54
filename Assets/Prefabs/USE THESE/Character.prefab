@@ -543,6 +543,7 @@ MonoBehaviour:
   Character: {fileID: 6399879873392983726}
   Body: {fileID: 2656706498618075349}
   Camera: {fileID: 7831782524713915765}
+  m_MusicSource: {fileID: 2590881209127617892}
   StartLevel: {fileID: 0}
   StartWagonPosition: {x: 0, y: 0, z: 0}
   StartWagon: {fileID: 0}
