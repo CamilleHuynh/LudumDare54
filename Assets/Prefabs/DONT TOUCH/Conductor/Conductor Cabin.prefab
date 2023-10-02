@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 858183ba995c5a04a84927a084fcbeb0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -287,7 +287,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,7 +393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -510,6 +510,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b9854f8f593fe3949a6f25b202d5eea4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68fcd19826b5cdb4fa931bbff67cb4ce, type: 2}
     - target: {fileID: 919132149155446097, guid: b9854f8f593fe3949a6f25b202d5eea4,
         type: 3}
       propertyPath: m_Name
@@ -614,6 +619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sas Husk
       objectReference: {fileID: 0}
+    - target: {fileID: 5827057906071272688, guid: 17b811b19b9438d418936755d5bb83a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dcfca852628f54142b740064c977ba12, type: 2}
     - target: {fileID: 6304870585633389400, guid: 17b811b19b9438d418936755d5bb83a7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -751,6 +761,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6e1244b5e4d14d04ba236f89d068f4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb2d04d30a58f7944a8d3cbffd80bf4c, type: 2}
     - target: {fileID: 919132149155446097, guid: 6e1244b5e4d14d04ba236f89d068f4eb,
         type: 3}
       propertyPath: m_Name
