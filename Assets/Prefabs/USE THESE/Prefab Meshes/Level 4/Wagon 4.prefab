@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &429644622988239646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6678088301425733629}
+  m_Layer: 0
+  m_Name: Wagon 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6678088301425733629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429644622988239646}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3439833014013359553}
+  - {fileID: 8684766536221123324}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2895114477389729382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8684766536221123324}
+  m_Layer: 0
+  m_Name: Add LD Here
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8684766536221123324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895114477389729382}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6678088301425733629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2450644950614339059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6678088301425733629}
+    m_Modifications:
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902729048157524323, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.888
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902729048157524323, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.458
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937294153191237035, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.888
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937294153191237035, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.458
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268098595772405142, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Wagon Husk
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612086175831405286, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Door 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77701134cdf34c74d9a28b10b14fcf4b, type: 3}
+--- !u!4 &3439833014013359553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 990454915578304562, guid: 77701134cdf34c74d9a28b10b14fcf4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2450644950614339059}
+  m_PrefabAsset: {fileID: 0}
