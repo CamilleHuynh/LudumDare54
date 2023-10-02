@@ -126,6 +126,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sas 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1140397889611786891, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9295c45841084a4aac51fa72bc979c2, type: 2}
+    - target: {fileID: 2261799135225599914, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04c6dd0c9bfcb2d4199356f177dba883, type: 2}
     - target: {fileID: 4649088755857463588, guid: 7d65583eb0283b6408e264a881d500cb,
         type: 3}
       propertyPath: m_CoupledSas
@@ -141,6 +151,11 @@ PrefabInstance:
       propertyPath: m_SwitchWagonCollider
       value: 
       objectReference: {fileID: 1997593085908914904}
+    - target: {fileID: 7747419121207566018, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9883df7fce3f9a345a2c2ee79f8e4b04, type: 2}
     - target: {fileID: 8495281340160340015, guid: 7d65583eb0283b6408e264a881d500cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -191,6 +206,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8877820986186490851, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a92ae4a35eb4a4143acd8453303b23e3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -251,6 +271,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sas 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1140397889611786891, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a92ae4a35eb4a4143acd8453303b23e3, type: 2}
+    - target: {fileID: 2261799135225599914, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 69b3d6df961e9ee41825bf37e4ca5137, type: 2}
     - target: {fileID: 4649088755857463588, guid: 7d65583eb0283b6408e264a881d500cb,
         type: 3}
       propertyPath: m_CoupledSas
@@ -266,6 +296,11 @@ PrefabInstance:
       propertyPath: m_SwitchWagonCollider
       value: 
       objectReference: {fileID: 2270542044191421094}
+    - target: {fileID: 7747419121207566018, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 40586d12c3400c9448961e49d8655c27, type: 2}
     - target: {fileID: 8495281340160340015, guid: 7d65583eb0283b6408e264a881d500cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -316,6 +351,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8877820986186490851, guid: 7d65583eb0283b6408e264a881d500cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9295c45841084a4aac51fa72bc979c2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1205,6 +1205,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2902729048157524323}
     m_Modifications:
+    - target: {fileID: 1067596650699340231, guid: 4254954f46479d94baa828dd79b8f5ea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f3e45178923c8545852b76589fad87d, type: 2}
     - target: {fileID: 2595835239360743349, guid: 4254954f46479d94baa828dd79b8f5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1260,6 +1265,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlidingDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 7676104147138743694, guid: 4254954f46479d94baa828dd79b8f5ea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: edc3d6bf1b4bad34186b290ea2e09229, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1516,6 +1526,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2937294153191237035}
     m_Modifications:
+    - target: {fileID: 1067596650699340231, guid: 4254954f46479d94baa828dd79b8f5ea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a3a765dd3eceeb4c91e58ee4aa832ab, type: 2}
     - target: {fileID: 2595835239360743349, guid: 4254954f46479d94baa828dd79b8f5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,6 +1586,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlidingDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 7676104147138743694, guid: 4254954f46479d94baa828dd79b8f5ea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f3e45178923c8545852b76589fad87d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
