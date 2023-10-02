@@ -209,6 +209,11 @@ public class BubbleView : DialogueViewBase
             canvasGroup = GetComponentInParent<CanvasGroup>();
         }
 
+        private void Start()
+        {
+
+        }
+
         /// <inheritdoc/>
         public override void DismissLine(Action onDismissalComplete)
         {

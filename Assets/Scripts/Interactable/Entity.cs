@@ -42,7 +42,7 @@ public class Entity : MonoBehaviour, IInteractable
             m_DialogueManager.OnDialogueComplete += DialogueManager_OnDialogueComplete;
 
             // Hide prompt
-            ShowPrompt(false);
+            m_PromptContainer.Show(false);
             m_CanShowPrompt = false;
 
             // Move Camera ?

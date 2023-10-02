@@ -834,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ff4731c76d0db4c8d2b5ab9e64f42d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AudioManager: {fileID: 0}
+  m_AudioManager: {fileID: 7177793440259347256}
   canvasGroup: {fileID: 2874053964455935705}
   useFadeEffect: 0
   fadeInTime: 0.25
@@ -1058,6 +1058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prompt
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068087167437218795, guid: 25793d3821c2d824792380068dccf591,
+        type: 3}
+      propertyPath: m_text
+      value: Talk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
