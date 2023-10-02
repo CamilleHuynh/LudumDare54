@@ -1,20 +1,103 @@
-﻿title: Start
+title: OmbreVide
 tags:
 ---
-PNJ: Bonjour !
-
+PNJ: ...
 ===
-title: Yo
+title: A1
 tags:
 ---
-PNJ: Bonjour !
-PNJ: Comment ça va ?
-PNJ: Je suis très rouge aujourd'hui...
+PNJ: I never managed to reach the train's driver.
+PNJ: Sooo...
+PNJ: I sat down.
 ===
-title: PNJ2
+title: I1
 tags:
 ---
-PNJ: Bonjour !
-PNJ: Comment ça va ?
-PNJ: Je suis très rouge aujourd'hui...
+PNJ: Damn, today the train is so crowded.
+PNJ: Where's the damn AC, I can barely breathe in here
+===
+title: E2
+tags:
+---
+PNJ: Usually, they always for me at the station with flowers.
+PNJ: But today, I got some for them.
+PNJ: Can't wait to see their reaction
+===
+title:I8
+tags:
+---
+PNJ: Just took a picture of the sun shining through the tree leaves.
+===
+title:I6
+tags:
+---
+PNJ: The sight of trees is boooring, I wanna see some stars.
+===
+title:I9
+tags:
+---
+PNJ: The golden hour slaps ! 
+PNJ: Let's take a selfie.
+===
+title: A2
+tags:
+---
+PNJ: Where did the train driver go ?
+PNJ: He's kinda hot, what's his number
+===
+title: C1
+tags:
+---
+PNJ: Today is our first trip by train with the kids.
+PNJ: I've been dying to get out of the city
+PNJ: You got Gaspard on my side and Louis and Jean right there.
+===
+title: E1
+tags:
+---
+PNJ: I saw some random, waiting for their partner with flowers at the station
+PNJ: And it's pissing me off.
+PNJ: What about me...
+===
+title: A3
+tags:
+---
+PNJ: Hmmm, haven't heard the train's driver announcement for a while now.
+===
+title: I10
+tags:
+---
+PNJ: Don't talk to me.
+===
+title: G1
+tags:
+---
+PNJ: The future is so sad, forests are burning, prices are rising.
+PNJ: How can I project myself into the future.
+===
+title: A6
+tags:
+---
+PNJ: I heard there was an emergency exit next to the driver
+===
+title: A5
+tags:
+---
+PNJ: The kids have been dying to hear the train's whistle
+PNJ: But the driver doesn't seem to like the tchou tchou
+===
+title: I13
+tags:
+---
+PNJ: Why is no one seating next to me...
+===
+title: C2
+tags:
+---
+PNJ: Today's our first day taking the train since the incident.
+===
+title:Driver
+tags:
+---
+PNJ: Placeholder
 ===
