@@ -26,6 +26,9 @@ public class Entity : MonoBehaviour, IInteractable
     {
         m_DialogueRunner = FindObjectOfType<DialogueRunner>();
         m_DialogueManager = FindObjectOfType<DialogueManager>();
+
+        m_CanShowPrompt = true;
+        m_HasAlreadyTalked = true;
     }
 
     public void Interact()

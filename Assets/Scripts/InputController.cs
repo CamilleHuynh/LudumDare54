@@ -18,14 +18,15 @@ public class InputController : MonoBehaviour
     private bool m_CanInteract = true;
     private IInteractable m_LastInteractable;
 
-    private void OnEnable()
+    private void Start()
     {
         m_InputActions = new FPSInputAction();
 
         // Fetch action
+        m_InteractAction.Enable();
         m_InteractAction = m_InputActions.Base.Interact;
         m_InteractAction.performed += OnInteract;
-        m_InteractAction.Enable();
+
     }
 
     private void Update()
